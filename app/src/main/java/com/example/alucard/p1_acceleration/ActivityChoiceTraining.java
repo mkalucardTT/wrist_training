@@ -45,7 +45,7 @@ public class ActivityChoiceTraining extends Activity implements View.OnClickList
     int time = 0, index = 1;
 
     Timer timer;
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd_HH:mm:ss");
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
     Date startDateandTime, finishDateAndTime;
     String comment = "";
     @Override
@@ -202,7 +202,7 @@ public class ActivityChoiceTraining extends Activity implements View.OnClickList
         keyValuesEditor.putString("start"+CountRecords, sdf.format(startDateandTime));
         keyValuesEditor.putString("finish"+CountRecords, sdf.format(finishDateAndTime));
         keyValuesEditor.putString("count"+CountRecords, String.valueOf(count));
-        keyValuesEditor.putString("time"+CountRecords, String.valueOf(time));
+        keyValuesEditor.putString("time"+CountRecords, String.valueOf(index==1 ? time: 60-time));
         keyValuesEditor.putString("comment"+CountRecords, comment);
         keyValuesEditor.putInt("CountRecords", CountRecords);
 
@@ -268,7 +268,7 @@ public class ActivityChoiceTraining extends Activity implements View.OnClickList
 
         }
 
-        if (index == 1 && count == (endcount+1)){
+        if (index == 1 && count == (endcount)){
             onFinishTraining();
         }
     }

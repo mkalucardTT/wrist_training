@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Кистевой тренажер</string>
+    <string name="by_the_amount">на количество</string>
+    <string name="count">количество</string>
+    <string name="for_the_time">на время</string>
+    <string name="onTime"> 1 минута </string>
+
+    <string name="choice_training">Выбор тренировки</string>
+    <string name="show_statistics">Показать статистику</string>
+
+    <string name="title_activity_show_statistics">ActivityShowStatistics</string>
+
+    <string name="start_training">Начать тренировку</string>
+    <string name="finish_training">Закончить тренировку</string>
+    <string name="prompt">Здесь Вы можете оставить свой комментарий</string>
+
+    <string name="by_created">Разработал Вадим Новиков</string>
+
+    <string name="start_time">Время начала</string>
+    <string name="finish_time">Время окончания</string>
+    <string name="coun">Количество</string>
+    <string name="seconds">Время в сек.</string>
+    <string name="comment">Комментарий</string>
+</resources>
